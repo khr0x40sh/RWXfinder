@@ -126,12 +126,17 @@ void TraverseDirectory(const char* directory)
     }
 }
 
-int main()
+int main(int argc, char* argv)
 {
+    if (argc != 2)
+    {
+        printf("Usage: %s [Folder path to check for RWX DLLs]\n", argv[0]);
+        return 1;
+    }
     // Setting PATH to check
     SetDllDirectory("C:\\Program Files (x86)");
 
-    TraverseDirectory("C:\\");
+    TraverseDirectory(argv[1]);
 
     return 0;
 }
