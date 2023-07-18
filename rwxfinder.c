@@ -1,3 +1,13 @@
+//Original source https://github.com/pwnsauc3/RWXfinder
+// This version looks for RWX DLLs via folder path provided via command line.
+//
+// ex. rwxfinder.exe "C:\\Program Files (x86)\\"
+//
+//The functionality of this code in an automated format can be found in the mockingjay-local project. 
+// 
+//This code is provided as is and comes with no guarantees or warranties.
+//  Use of such code is at your own risk
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
